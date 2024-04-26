@@ -1,0 +1,71 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+}
+
+h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+h2{
+    font-size: 25px;
+    text-align: center;
+}
+p{
+    text-align: center;
+    margin: 2px;
+}
+.encabezado{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 25px;
+    text-align: center;
+}
+.cuestionario{
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 15px;
+    text-align: center;
+}
+form{
+    padding: 0px;
+    margin-top: 5px;
+}
+input{
+    padding: 4px;
+    border-radius: 25px;
+    margin-top: 6px;
+}
+button{
+    border-radius: 25px;
+}
+
+.botonInicioCuestionario{
+    text-align: center;
+}
+
+.botonTermine{
+    color: white;
+    background-color: green;
+    font-size: 25px;
+}
+
+.reiniciarBotton{
+    color: yellow;
+    background-color: red;
+    font-size: 25px;
+    margin-top: 0px;
+}
+.botonIniciar{
+    color: yellow;
+    background-color: blue;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.zonaBaja{
+    text-align: center;
+    margin: 10px;
+}
+
+#tiempoEnMarcha{
+    padding: 4px;
+}
