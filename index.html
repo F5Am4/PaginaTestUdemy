@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cuestionario de 5 preguntas</title>
+</head>
+<body>
+    <!-- TITULO -->
+
+        <h1>Cuestionario de 5 preguntas</h1>
+        <h2>Responde el cuestionario<br>
+            <span id="cuentaRegresiva"></span></h2>
+        <!-- <h1 id="textoAlarma" >DA CLICK A INICIO CUANDO ESTES LISTO</h1> -->
+        <!-- <h1 id="horaDia">00:00:00</h1> -->
+        <!-- <h1 id="cuentaRegresiva">00:00</h1> -->
+        <!-- <input type="number" id="tiempoEnMarcha"><br> -->
+        <div class="botonInicioCuestionario">
+        <button class="botonIniciar" onclick="comenzarCuentaRegresiva()">Inicio</button>
+        </div>
+        <!-- AUDIO ALARMA ---------------------------------------------->
+        <!-- <audio id="audioAlarma"> -->
+            <!-- <audio controls> Permite controlar el reproductor de sonido y que este a su vez sea visible -->
+            <!-- <source src="./alarma.mp3" type="audio/mpeg"> -->
+            <!-- 'Sonido no Habilitado' -->
+        <!-- </audio> -->
+
+    <!-- CUESTIONARIO -->
+    <div class="cuestionario" id="cuestionarioActivado">
+        <form action="preguntas">
+            <p>1. ¿Cuanto es 15 + 12?</p>
+            <input type="text" id="respuesta_uno" required><br/>
+            <button>Enviar respuesta</button>
+
+            <p>2. ¿Cuál es la capital de Canada?</p>
+            <input type="text" id="respuesta_dos" required><br>
+            <button>Enviar respuesta</button>
+
+            <p>3. ¿Cual es el avión mas grande de carga del mundo?</p>
+            <input type="text" id="respuesta_tres" required><br>
+            <button>Enviar respuesta</button>
+
+            <p>4. ¿Cual es el juego mas vendido de RockstarGames?</p>
+            <input type="text" id="respuesta_cuatro" required><br>
+            <button>Enviar respuesta</button>
+
+            <p>5. ¿Cual es el lenguaje mas usado para la Web?</p>
+            <input type="text"  id="respuesta_cinco" required><br>
+            <button>Enciar respuesta</button><br>
+            <br>
+            <!-- boton de finalizado el cuestionario por el usuario -->
+            <button class="botonTermine" onclick="finalizado()">Terminé</button>
+        </form>
+    </div>
+    <!-- BOTON REINICIO -------------------------->
+    <div class="zonaBaja">
+        <button class="reiniciarBotton" onclick="reiniciarCuestionario()">Reiniciar</button>
+        <h1 id="fecha">DD/MM/AAAA</h1>
+        <audio id="audioFinal">
+            <source src="./gameover.mp3" type="audio/mpeg">
+            'Sonido no Habilitado'
+        </audio>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
